@@ -8,7 +8,7 @@ const SplashScreen = ({navigation: {navigate}}: any) => {
     let token = AsyncStorage.getItem('token');
     setTimeout(() => {
       if (token !== null && token !== undefined) {
-        navigate('Home');
+        navigate('Tabs');
       } else {
         navigate('Login');
       }

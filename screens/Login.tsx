@@ -3,7 +3,6 @@ import {
   Text,
   View,
   TextInput,
-  Button,
   TouchableOpacity,
   Image,
   ActivityIndicator,
@@ -45,7 +44,7 @@ const Login = ({navigation: {navigate}}: any) => {
       isError === false &&
         isLoading === false &&
         isAuth === true &&
-        navigate('Home');
+        navigate('Tabs');
     }
   };
 
@@ -53,7 +52,6 @@ const Login = ({navigation: {navigate}}: any) => {
     <SafeAreaView style={styles.component}>
       {isLoading ? (
         <ActivityIndicator
-          style={{position: 'absolute'}}
           color="black"
           size="large"
         />
